@@ -1,0 +1,118 @@
+/* Reset básico e configurações de página para impressão (A4) */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@page {
+    size: A4;
+    margin: 1.2cm; /* Margens enxutas para caber em uma página */
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: #333;
+    line-height: 1.35;
+    font-size: 10.5pt;
+    background-color: #fff;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 8px;
+}
+
+h1 {
+    font-size: 18pt;
+    color: #2c3e50;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+}
+
+.contact-info {
+    font-size: 9.5pt;
+    color: #555;
+}
+
+.contact-info a {
+    color: #555;
+    text-decoration: none;
+}
+
+/* Seções */
+section {
+    margin-bottom: 12px;
+}
+
+h2 {
+    font-size: 12pt;
+    color: #2c3e50;
+    text-transform: uppercase;
+    border-bottom: 1px solid #bdc3c7;
+    padding-bottom: 2px;
+    margin-bottom: 6px;
+}
+
+/* Resumo Profissional */
+.summary {
+    text-align: justify;
+}
+
+/* Itens de Experiência e Educação */
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 3px;
+}
+
+.job-title {
+    font-weight: bold;
+    font-size: 11pt;
+    color: #222;
+}
+
+.company-name {
+    font-style: italic;
+    color: #555;
+}
+
+.date {
+    font-size: 9.5pt;
+    font-style: italic;
+    color: #666;
+    white-space: nowrap;
+}
+
+/* Listas (Bullet points) */
+ul {
+    list-style-type: disc;
+    margin-left: 18px;
+    margin-bottom: 8px;
+}
+
+li {
+    margin-bottom: 3px;
+    text-align: justify;
+}
+
+/* Destaques em negrito nas descrições */
+.highlight {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Competências */
+.skills-list {
+    list-style-type: none;
+    margin-left: 0;
+}
+
+.skills-list li {
+    margin-bottom: 2px;
+}
